@@ -7,13 +7,15 @@ set shiftwidth=4
 set expandtab
 set smartindent
 set nu
-set nowrap
+"set nowrap
 set smartcase
-set noswapfile
-set nobackup
-set undodir=~/.vim/undodir
-set undofile
+"set noswapfile
+"set nobackup
+"set undodir=~/.vim/undodir
+"set undofile
 set incsearch
+
+inoremap { {<CR><BS>}<Esc>ko
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
@@ -28,7 +30,7 @@ Plug 'vim-utils/vim-man'
 Plug 'lyuts/vim-rtags'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ycm-core/YouCompleteMe'
-Plug 'mbbill/undotree'
+"Plug 'mbbill/undotree'
 
 call plug#end()
 
